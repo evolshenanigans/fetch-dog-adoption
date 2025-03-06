@@ -14,7 +14,7 @@ interface Dog {
 }
 
 export default function MatchPage() {
-  const { logout, userInfo } = useAuth();
+  const { logout } = useAuth();
   const router = useRouter();
   
   const [isLoading, setIsLoading] = useState(true);
@@ -188,9 +188,9 @@ export default function MatchPage() {
             </div>
             
             <div className="text-center mt-8">
-              <p className="text-gray-600 mb-4">
-                Congratulations! {matchedDog.name} is your perfect match. If this were a real adoption site, you'd find contact information for the shelter here.
-              </p>
+            <p className="text-gray-600 mb-4">
+              Congratulations! {matchedDog.name} is your perfect match. If this were a real adoption site, you&apos;d find contact information for the shelter here.
+            </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <button
                   onClick={() => window.open(`https://maps.google.com/?q=${matchedDog.zip_code}`, '_blank')}

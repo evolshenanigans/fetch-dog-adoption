@@ -196,7 +196,7 @@ export default function SearchPage() {
     setIsLoading(true);
     
     try {
-      let cursorUrl = newPage > currentPage 
+      const cursorUrl = newPage > currentPage 
         ? results.next 
         : results.prev;
       
