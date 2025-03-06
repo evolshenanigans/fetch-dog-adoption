@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: ['frontend-take-home-service.fetch.com', 'frontend-take-home.fetch.com'],
+  },
 };
 
 export default nextConfig;
